@@ -101,7 +101,7 @@ Error generating stack: `+o.message+`
     outline: 5px solid ${e=>e.theme.primary.transparent};
     outline-style: 0.5;
   }
-`,Dm=()=>J.jsx(Om,{children:J.jsx(jm,{})}),Mm="/assets/Vize_pro_evropu_obalka-Ncizy9GY.png",Fm=at.div`
+`,Dm=()=>J.jsx(Om,{children:J.jsx(jm,{})}),Mm="/VizeProEvropu/assets/Vize_pro_evropu_obalka-Ncizy9GY.png",Fm=at.div`
   width: 400px;
   height: 607px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
