@@ -8,18 +8,20 @@ export const Carousel = () => {
 
   const handlePrevious = () => {
     const newIndex = index - 1;
-    setIndex(newIndex < 0 ? authors.length - 1 : newIndex);
+    setIndex(newIndex < 0 ? authors.length - 3 : newIndex);
   };
 
   const handleNext = () => {
     const newIndex = index + 1;
-    setIndex(newIndex > authors.length - 1 ? 0 : newIndex);
+    setIndex(newIndex > authors.length - 3 ? 0 : newIndex);
   };
 
   useEffect(() => {
     const timeoutFunction = setTimeout(() => handleNext(), 5000);
     return () => clearTimeout(timeoutFunction);
   }, [index]);
+
+  console.log(index);
 
   return (
     <Wrapper id="authors_carousel">
@@ -28,7 +30,7 @@ export const Carousel = () => {
           style={{
             gridTemplateColumns: `repeat(${authors.length}, 1fr)`,
             width: `${authors.length * 33.33}%`,
-            translate: `${-(index * 28.5) % (3 * 28.5)}%`,
+            translate: `${-(index * (100 / authors.length))}%`,
           }}
         >
           {authors.map((author) => (
