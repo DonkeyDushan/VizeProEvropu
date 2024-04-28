@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
+  padding: 2rem 0;
 `;
 
 export const CarouselWrapper = styled.div`
