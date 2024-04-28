@@ -5,5 +5,5 @@ export const AppWrapper = styled.div`
   height: fit-content;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 100vh auto auto;
+  grid-template-rows: minmax(100vh, max-content) minmax(25vh, max-content) minmax(25vh, max-content);
 `;

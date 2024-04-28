@@ -13,7 +13,7 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   position: absolute;
   bottom: 20px;
   left: 10px;
@@ -37,7 +37,7 @@ const Button = styled.button`
 export const ScrollButton = () => {
   return (
     <ButtonWrapper>
-      <Button />
+      <Button href={'#authors_carousel'} />
     </ButtonWrapper>
   );
 };

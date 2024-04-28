@@ -10,12 +10,14 @@ export const MainSectionOuterWrapper = styled.div`
 
   @media screen and (max-width: 1000px) {
     grid-template-rows: minmax(max-content, calc(100vh - 100px)) 100px;
+    grid-template-rows: calc(100vh - 70px) 100px;
   }
 `;
 
 export const MainSectionInnerWrapper = styled.div`
   width: 100%;
   height: 100%;
+  padding: 20px;
   display: grid;
   background-color: ${(props) => props.theme.primary.main};
   justify-content: center;
@@ -23,6 +25,10 @@ export const MainSectionInnerWrapper = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 20px bottom 20px;
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 40px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -32,7 +38,6 @@ export const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  padding: 30px;
 
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
