@@ -45,6 +45,10 @@ Error generating stack: `+o.message+`
   display: grid;
   grid-template-rows: calc(100vh - 100px) 100px;
   justify-items: center;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-rows: minmax(max-content, calc(100vh - 100px)) 100px;
+  }
 `,Rm=at.div`
   width: 100%;
   height: 100%;
@@ -56,13 +60,17 @@ Error generating stack: `+o.message+`
   background-repeat: no-repeat;
   background-position: right 20px bottom 20px;
 `,Lm=at.div`
-  width: 100%;
-  min-width: 1200px;
-  max-width: 1500px;
+  width: 80vw;
+  max-width: 1200px;
   height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
+  padding: 30px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `,Im=at.div`
   width: 100%;
   height: fit-content;
@@ -90,7 +98,6 @@ Error generating stack: `+o.message+`
   border-radius: 10px;
   background-color: ${e=>e.theme.primary.main};
   transform: rotate(45deg);
-  cursor: pointer;
 
   transition:
     outline 0.15s,
@@ -102,10 +109,16 @@ Error generating stack: `+o.message+`
   }
 `,Dm=()=>J.jsx(Om,{children:J.jsx(jm,{})}),Mm="/VizeProEvropu/assets/Vize_pro_evropu_obalka-Ncizy9GY.png",Fm=at.div`
   width: 400px;
-  height: 607px;
+  height: 600px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   transform: rotate(5deg);
-`,Am=()=>J.jsx(Fm,{children:J.jsx("img",{src:Mm,width:"100%"})}),Um=at.button`
+  z-index: 2;
+
+  @media screen and (max-width: 800px) {
+    width: 60vw;
+    height: 90vw;
+  }
+`,Am=()=>J.jsx(Fm,{children:J.jsx("img",{src:Mm,width:"100%",height:"100%"})}),Um=at.button`
   align-self: center;
   height: fit-content;
   width: fit-content;
@@ -115,7 +128,6 @@ Error generating stack: `+o.message+`
   border-radius: 100px;
   background-color: ${e=>e.theme.primary.main};
 
-  cursor: pointer;
   font-size: 1.5rem;
   font-weight: 300;
   color: #fff;
