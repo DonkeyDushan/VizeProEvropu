@@ -1,11 +1,12 @@
-import './App.css';
+import { AppWrapper } from './components';
+import { MainSection } from './sections';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div>Vize pro evropu</div>
-    </>
+    <AppWrapper>
+      <MainSection />
+    </AppWrapper>
   );
-}
+};
 
 export default App;
