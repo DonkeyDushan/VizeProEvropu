@@ -52,7 +52,6 @@ Error generating stack: `+o.message+`
   background-color: ${e=>e.theme.primary.main};
   justify-content: center;
   align-content: center;
-  background-image: url('src/app/assets/Vize_pro_evropu_linka.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 20px bottom 20px;
@@ -126,4 +125,4 @@ Error generating stack: `+o.message+`
   &:hover {
     outline: 5px solid #ffffff3a;
   }
-`,Bm=()=>J.jsx(Um,{children:"Stáhnout knihu"}),Vm=()=>J.jsxs($m,{children:[J.jsx(Rm,{children:J.jsxs(Lm,{children:[J.jsxs("div",{style:{display:"grid",gridTemplateRows:"min-content min-content auto"},children:[J.jsx("h1",{children:"VIZE PRO EVROPU"}),J.jsx("h4",{children:"kniha Markéty Gregorové"}),J.jsx(Bm,{})]}),J.jsx(Am,{})]})}),J.jsx(Dm,{})]}),Wm=()=>J.jsx(Im,{children:J.jsx(Vm,{})}),Hm={primary:{main:"#614897",transparent:"#6148974A"}};Xo.createRoot(document.getElementById("root")).render(J.jsx(zt.StrictMode,{children:J.jsx(Nm,{theme:Hm,children:J.jsx(Wm,{})})}));
+`,Bm=()=>J.jsx(Um,{children:"Stáhnout knihu"}),Vm="/VizeProEvropu/assets/Vize_pro_evropu_linka-B1lyOvx7.png",Wm=()=>J.jsxs($m,{children:[J.jsx(Rm,{style:{backgroundImage:`url(${Vm})`},children:J.jsxs(Lm,{children:[J.jsxs("div",{style:{display:"grid",gridTemplateRows:"min-content min-content auto"},children:[J.jsx("h1",{children:"VIZE PRO EVROPU"}),J.jsx("h4",{children:"kniha Markéty Gregorové"}),J.jsx(Bm,{})]}),J.jsx(Am,{})]})}),J.jsx(Dm,{})]}),Hm=()=>J.jsx(Im,{children:J.jsx(Wm,{})}),Qm={primary:{main:"#614897",transparent:"#6148974A"}};Xo.createRoot(document.getElementById("root")).render(J.jsx(zt.StrictMode,{children:J.jsx(Nm,{theme:Qm,children:J.jsx(Hm,{})})}));
