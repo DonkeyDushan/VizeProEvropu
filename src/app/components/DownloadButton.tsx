@@ -10,7 +10,6 @@ const Button = styled.button`
   border-radius: 100px;
   background-color: ${(props) => props.theme.primary.main};
 
-  cursor: pointer;
   font-size: 1.5rem;
   font-weight: 300;
   color: #fff;

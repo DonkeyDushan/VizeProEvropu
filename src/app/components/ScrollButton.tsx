@@ -23,7 +23,6 @@ const Button = styled.button`
   border-radius: 10px;
   background-color: ${(props) => props.theme.primary.main};
   transform: rotate(45deg);
-  cursor: pointer;
 
   transition:
     outline 0.15s,

@@ -7,6 +7,10 @@ export const MainSectionOuterWrapper = styled.div`
   display: grid;
   grid-template-rows: calc(100vh - 100px) 100px;
   justify-items: center;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-rows: minmax(max-content, calc(100vh - 100px)) 100px;
+  }
 `;
 
 export const MainSectionInnerWrapper = styled.div`
@@ -22,11 +26,15 @@ export const MainSectionInnerWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  width: 100%;
-  min-width: 1200px;
-  max-width: 1500px;
+  width: 80vw;
+  max-width: 1200px;
   height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
+  padding: 30px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
