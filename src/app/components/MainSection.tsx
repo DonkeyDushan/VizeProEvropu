@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Line from 'app/assets/Vize_pro_evropu_linka.png';
 
 export const MainSectionOuterWrapper = styled.div`
   position: relative;
@@ -17,7 +16,6 @@ export const MainSectionInnerWrapper = styled.div`
   background-color: ${(props) => props.theme.primary.main};
   justify-content: center;
   align-content: center;
-  background-image: url('src/app/assets/Vize_pro_evropu_linka.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 20px bottom 20px;
