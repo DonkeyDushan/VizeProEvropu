@@ -20,7 +20,7 @@ const Button = styled.a`
   width: 80px;
   height: 80px;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: ${(props) => props.theme.primary.main};
   transform: rotate(45deg);
 
