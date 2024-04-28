@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/VizeProEvropu/',
   build: {
-    outDir: 'build',
+    outDir: 'dist',
     target: 'esnext',
   },
   resolve: {
