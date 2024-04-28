@@ -43,13 +43,8 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: calc(100vh - 100px) 100px;
+  grid-template-rows: calc(100vh - 50px) 50px;
   justify-items: center;
-
-  @media screen and (max-width: 1000px) {
-    grid-template-rows: minmax(max-content, calc(100vh - 100px)) 100px;
-    grid-template-rows: calc(100vh - 70px) 100px;
-  }
 `,Om=X.div`
   width: 100%;
   height: 100%;
@@ -103,7 +98,7 @@ Error generating stack: `+o.message+`
   width: 80px;
   height: 80px;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: ${e=>e.theme.primary.main};
   transform: rotate(45deg);
 
