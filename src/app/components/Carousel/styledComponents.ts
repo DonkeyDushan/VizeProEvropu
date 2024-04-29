@@ -6,13 +6,11 @@ export const Wrapper = styled.div`
   position: relative;
   display: grid;
   justify-items: center;
-  padding: 0 2rem 1rem 2rem;
 `;
 
 export const CarouselWrapper = styled.div`
   overflow: hidden;
   position: relative;
-  border-color: #4b5563;
   width: calc(100% - 120px);
   z-index: 2;
 `;

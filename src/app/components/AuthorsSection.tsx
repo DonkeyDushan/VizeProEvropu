@@ -7,6 +7,7 @@ export const AuthorSectionOuterWrapper = styled.div`
   height: 100%;
   display: grid;
   justify-content: center;
+  padding-bottom: 24px;
 `;
 
 export const AuthorSectionInnerWrapper = styled.div`
