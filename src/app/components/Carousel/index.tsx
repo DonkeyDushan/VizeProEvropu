@@ -1,11 +1,21 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Button, ButtonsWrapper, CarouselWrapper, Slider, Wrapper } from './styledComponents';
+import {
+  Button,
+  ButtonsWrapper,
+  CarouselWrapper,
+  Grid,
+  Slider,
+  UnrollButton,
+  Wrapper,
+} from './styledComponents';
 import { authors } from 'app/content/authors';
 import { Card } from './Card';
+import { Chevron } from '../Chevron';
 
 export const Carousel = () => {
   const [index, setIndex] = useState(0);
   const [play, setPlay] = useState(true);
+  const [showCarousel, setShowCarousel] = useState(true);
 
   const handlePrevious = () => {
     const newIndex = index - 1;
@@ -20,17 +30,16 @@ export const Carousel = () => {
   }, [index, play]);
 
   useEffect(() => {
-    const timeoutFunction = setTimeout(handleNext, 1000);
+    const timeoutFunction = setTimeout(handleNext, 5000);
     return () => clearTimeout(timeoutFunction);
   }, [index, play]);
 
   console.log(play);
 
   return (
-    <>
-      <div color="black">{play}</div>
-      <Wrapper id="authors_carousel">
-        <CarouselWrapper>
+    <Wrapper id="authors_carousel">
+      <CarouselWrapper>
+        {showCarousel ? (
           <Slider
             style={{
               gridTemplateColumns: `repeat(${authors.length}, 1fr)`,
@@ -44,13 +53,29 @@ export const Carousel = () => {
               <Card key={`${author.name}`} author={author} />
             ))}
           </Slider>
-        </CarouselWrapper>
+        ) : (
+          <Grid>
+            {authors.map((author) => (
+              <Card key={`${author.name}`} author={author} />
+            ))}
+          </Grid>
+        )}
+      </CarouselWrapper>
 
+      {showCarousel && (
         <ButtonsWrapper>
-          <Button onClick={handlePrevious}>{'<'}</Button>
-          <Button onClick={handleNext}>{'>'}</Button>
+          <Button onClick={handlePrevious}>
+            <Chevron direction="left" />
+          </Button>
+          <Button onClick={handleNext}>
+            <Chevron direction="right" />
+          </Button>
         </ButtonsWrapper>
-      </Wrapper>
-    </>
+      )}
+      <UnrollButton onClick={() => setShowCarousel(!showCarousel)}>
+        {showCarousel ? 'Zobrazit vše' : 'Sbalit'}
+        <Chevron direction={showCarousel ? 'down' : 'up'} />
+      </UnrollButton>
+    </Wrapper>
   );
 };
