@@ -37,9 +37,12 @@ export const CardWrapper = styled.div`
   align-items: center;
   gap: 1rem;
   color: ${palette.text.dark};
+  z-index: 1;
 `;
 
 export const CardTitle = styled.div`
+  font-family: 'Coolvetica';
+  letter-spacing: 0.05rem;
   width: 100%;
   text-align: center;
   color: ${palette.primary.main};

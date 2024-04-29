@@ -15,7 +15,7 @@ export const MainSection = () => {
         <ContentWrapper>
           <div style={{ display: 'grid', gridTemplateRows: 'min-content min-content auto' }}>
             <h1>VIZE PRO EVROPU</h1>
-            <h4>kniha Markéty Gregorové</h4>
+            <h2>sborník Markéty Gregorové</h2>
             <DownloadButton />
           </div>
           <BookCover />
