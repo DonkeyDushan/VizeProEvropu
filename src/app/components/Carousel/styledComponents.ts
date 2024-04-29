@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100%;
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   padding: 2rem 0;
 `;
 
@@ -46,23 +46,8 @@ export const CardTitle = styled.div`
   width: 100%;
   text-align: center;
   color: ${palette.primary.main};
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-`;
-
-export const PhotoWrapper = styled.div`
-  width: 150px;
-  height: 150px;
-  overflow: clip;
-  border-radius: 50%;
-  outline: 5px solid ${palette.outline};
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-  }
 `;
 
 export const ButtonsWrapper = styled.div`

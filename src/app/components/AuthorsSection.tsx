@@ -1,3 +1,4 @@
+import palette from 'app/theme/palette';
 import styled from 'styled-components';
 
 export const AuthorSectionOuterWrapper = styled.div`
@@ -11,4 +12,10 @@ export const AuthorSectionOuterWrapper = styled.div`
 export const AuthorSectionInnerWrapper = styled.div`
   width: 80vw;
   max-width: 1200px;
+  display: grid;
+  justify-items: center;
+`;
+
+export const SectionTitle = styled.h2`
+  color: ${palette.primary.main};
 `;

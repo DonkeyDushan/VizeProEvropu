@@ -5,6 +5,8 @@ const ButtonWrapper = styled.div`
   height: 40px;
   width: 135px;
   overflow: clip;
+  display: flex;
+  justify-content: center;
 
   transition: height 0.15s;
 
@@ -16,7 +18,6 @@ const ButtonWrapper = styled.div`
 const Button = styled.a`
   position: absolute;
   bottom: 20px;
-  left: 10px;
   width: 80px;
   height: 80px;
   border: none;

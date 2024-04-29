@@ -1,50 +1,55 @@
-import img1 from 'app/assets/photos/img1.png';
-import img2 from 'app/assets/photos/img2.png';
-import img3 from 'app/assets/photos/img3.png';
-import img4 from 'app/assets/photos/img4.png';
-import img5 from 'app/assets/photos/img5.png';
-import img6 from 'app/assets/photos/img6.png';
-
 export interface IAuthors {
   name: string;
   text: string;
-  photoUrl: string;
 }
 
 export const authors = [
   {
-    name: 'Alice Johnson',
-    text: "Greetings! I'm Alice Johnson, a political analyst with a keen interest in European affairs. My journey involves unraveling the complexities of European politics and history through meticulous research and analysis.",
-    photoUrl: img1,
+    name: 'Mgr. Vít Dostál, Ph.D.',
+    text: 'Je výkonným ředitelem Asociace pro mezinárodní otázky (AMO) a externě přednáší na Katedře mezinárodních vztahů a evropských studií Masarykovy univerzity v\u00A0Brně. Odborně se zaměřuje na českou zahraniční a evropskou politiku, středoevropskou spolupráci a polskou zahraniční a domácí politiku.',
   },
   {
-    name: 'David Smith',
-    text: "Greetings, fellow thinkers! I'm David Smith, a dedicated scholar delving into the intricacies of European governance and diplomacy. My passion lies in deciphering the evolving landscape of European politics and its global impact.",
-    photoUrl: img2,
+    name: 'Mgr. David František Wagner',
+    text: 'Vystudoval Pedagogickou fakultu Univerzity Karlovy, působí jako autor vzdělávacích i\u00a0volnočasových her a od roku 2017 jako poradce v\u00A0české Poslanecké sněmovně a Evropském parlamentu, kde vystupuje za Pirátskou stranu a vede programovou skupinu republikového výboru strany.',
   },
   {
-    name: 'Sophie Lee',
-    text: "Hello everyone! I'm Sophie Lee, an intrepid explorer of European socio-political dynamics. My quest is to shed light on the cultural tapestry and geopolitical nuances that shape the European continent.",
-    photoUrl: img3,
+    name: 'doc. PhDr. Běla Plechanovová, CSc.',
+    text: 'Od roku 1990 působí na Fakultě sociálních věd Univerzity Karlovy v\u00A0Praze, kde je zakládající členkou Ústavu politologických studií a spoluautorkou magisterských programů v\u00A0oblasti mezinárodních vztahů a bezpečnostních studií.',
   },
   {
-    name: 'Michael Chen',
-    text: "Hello, global citizens! I'm Michael Chen, a geopolitical enthusiast specializing in European affairs. Join me on a journey through the corridors of power in Europe as we navigate the currents of history and diplomacy.",
-    photoUrl: img4,
+    name: 'Mgr. David Broul',
+    text: 'Působí jako doktorand na Katedře politologie a evropských studií Univerzity Palackého \u00A0Olomouci. Věnuje se problematice evropské integrace, českému předsednictví a je spoluautorem knihy Evropa spolu: průvodce po historii i\u00a0současnosti Evropské unie.',
   },
   {
-    name: 'Emma Davis',
-    text: "Greetings, seekers of knowledge! I'm Emma Davis, a devoted researcher exploring the interplay of identity and politics in Europe. Let's delve into the intricacies of European history and culture to unravel its contemporary significance.",
-    photoUrl: img5,
+    name: 'JUDr. Jana Kazaz, LLM, SJD',
+    text: 'Od roku 2022 pracuje \u00A0GLOBSECu, kde se \u00A0Centru pro demokracii a odolnost věnuje strategické komunikaci, dezinformacím a hybridním hrozbám. Má doktorát z ústavního práva porovnávacího z CEU v\u00a0Budapešti a LL.M. se specializací v\u00a0problematice práva Evropské unie.',
   },
   {
-    name: 'Daniel Brown',
-    text: "Greetings to all truth-seekers! I'm Daniel Brown, a passionate advocate for understanding European politics and its implications for the global order. Join me in uncovering the untold stories and hidden truths of Europe's political landscape.",
-    photoUrl: img6,
+    name: 'prof. PhDr. Petr Kaniok, Ph.D.',
+    text: 'Od roku 2023 působí jako profesor na Katedře mezinárodních vztahů a evropských studií FSS MU a vedoucí Mezinárodního politologického ústavu. V\u00A0rámci své badatelské a pedagogické činnosti se věnuje institucím EU, politickým systémům EU, mezivládní unii, euroskepticismu, Skandinávii a otázkám evropské integrace.',
   },
   {
-    name: 'Olivia Taylor',
-    text: "Hello, fellow wanderers! I'm Olivia Taylor, an inquisitive mind exploring the depths of European politics and culture. Embark on a journey with me as we navigate the complexities of Europe's past, present, and future.",
-    photoUrl: img4,
+    name: 'Mgr. Helena Drdlová',
+    text: 'Je doktorandkou na University of Helsinki, kde se věnuje tématu průmyslové politiky a ekonomice střední a východní Evropy. Vzdělání získala na Masarykově univerzitě v\u00a0oboru Mezinárodní vztahy a hospodářská politika a na University of Helsinki v\u00a0programu Global Politics and Communication se zaměřením na globální politickou ekonomii.',
+  },
+  {
+    name: 'Mgr. Izabela Grundová',
+    text: 'Pracuje jako legal a policy officer v\u00a0klimatickém generálním ředitelství Evropské komise. Zaměřuje se na úpravu emisí skleníkových plynů nezahrnutých v\u00a0EU ETS a na klimatické plánování a ohlašování členských států. Působí jako kontaktní bod pro Česko v\u00a0oblasti klimatu.',
+  },
+  {
+    name: 'Ing. Iveta Jelenová',
+    text: 'Má desetiletou zkušenost s agendou EU v\u00a0rámci Ministerstva financí, kde se věnovala tématům, jako je hospodářská politika, evropský semestr, euro, rozpočtová pravidla EU a makrofinanční pomoc.',
+  },
+  {
+    name: 'Mgr. Karolína Godál',
+    text: 'Působí jako právnička v\u00a0Evropské sekci Úřadu vlády ČR, kde se věnuje průřezovým agendám, jako jsou brexit nebo právní stát. V\u00A0roce 2022 byla vyslána do Bruselu v\u00a0rámci Českého předsednictví v\u00a0Radě EU jako národní expert pro vztahy EU s Velkou Británií.',
+  },
+  {
+    name: 'prof. PhDr. Karel B. Müller, Ph.D.',
+    text: 'Od roku 2018 je profesorem politologie. V\u00A0současné době pracuje na vysoké škole CEVRO Institut v\u00a0Praze. Profesně se věnuje otázkám občanské společnosti, demokracie, veřejné sféry, politické kultury, lobbingu a evropské identity.',
+  },
+  {
+    name: 'Mgr. Markéta Gregorová',
+    text: 'Markéta Gregorová je od roku 2019 poslankyní Evropského parlamentu za Pirátskou stranu. Jejími stěžejními tématy jsou bezpečnostní a zahraniční politika, lidská práva a východní partnerství, včetně rozšiřování Evropské unie.',
   },
 ];
