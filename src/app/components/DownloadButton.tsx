@@ -1,5 +1,6 @@
 import palette from 'app/theme/palette';
 import styled from 'styled-components';
+import texturaURL from 'app/assets/Textura.jpg?url';
 
 const Button = styled.button`
   position: relative;
@@ -56,7 +57,7 @@ const Button = styled.button`
     padding: 1rem 2rem;
     border-radius: 100px;
     background-color: ${palette.background};
-    background-image: url('src/app/assets/Textura.jpg');
+    background-image: url(${texturaURL});
     background-position: center;
     filter: contrast(120%) brightness(1.2);
     border: 2px solid transparent;
