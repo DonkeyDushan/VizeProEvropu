@@ -14,6 +14,7 @@ export const CarouselWrapper = styled.div`
   position: relative;
   border-color: #4b5563;
   width: calc(100% - 120px);
+  z-index: 2;
 `;
 
 export const Slider = styled.div`
@@ -37,7 +38,6 @@ export const CardWrapper = styled.div`
   align-items: center;
   gap: 1rem;
   color: ${palette.text.dark};
-  z-index: 1;
 `;
 
 export const CardTitle = styled.div`
@@ -73,6 +73,7 @@ export const ButtonsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
 `;
 
 export const Button = styled.button`
