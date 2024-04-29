@@ -47,7 +47,23 @@ export const FooterSectionInnerWrapper = styled.div`
   width: 80vw;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
   gap: 2rem;
   padding: 32px 0;
+`;
+
+export const LogosWrapper = styled.div`
+  height: min-content;
+  width: 100%;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-self: start;
+
+  img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
 `;
