@@ -12,9 +12,16 @@ export const Wrapper = styled.div`
 export const GridWrapper = styled.div`
   width: 100%;
   overflow: hidden;
-  transition: all 1s ease-in-out;
+  transition: all 1s linear;
   display: grid;
   justify-items: center;
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    transition: all 1s linear;
+  }
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    transition: all 2s linear;
+  }
 `;
 
 export const Grid = styled.div`
