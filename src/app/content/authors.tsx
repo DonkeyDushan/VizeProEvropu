@@ -22,7 +22,7 @@ export const authors = [
   },
   {
     name: 'JUDr. Jana Kazaz, LLM, SJD',
-    text: 'Od roku 2022 pracuje v\u00A0GLOBSECu, kde se v\u00A0Centru pro demokracii a odolnost věnuje strategické komunikaci, dezinformacím a hybridním hrozbám. Má doktorát z ústavního práva porovnávacího z CEU v\u00a0Budapešti a LL.M. se specializací v\u00a0problematice práva Evropské unie.',
+    text: 'Od roku 2022 pracuje v\u00A0GLOBSECu, kde se v\u00A0Centru pro demokracii a odolnost věnuje strategické komunikaci, dezinformacím a hybridním hrozbám. Má doktorát z\u00a0ústavního práva porovnávacího z\u00a0CEU v\u00a0Budapešti a LL.M. se specializací v\u00a0problematice práva Evropské unie.',
   },
   {
     name: 'prof. PhDr. Petr Kaniok, Ph.D.',
