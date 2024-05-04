@@ -1,3 +1,4 @@
+import { breakpoints } from 'app/theme/breakpoints';
 import palette from 'app/theme/palette';
 import styled from 'styled-components';
 
@@ -10,9 +11,7 @@ export const Wrapper = styled.div`
 
 export const GridWrapper = styled.div`
   width: 100%;
-  height: 20rem;
   overflow: hidden;
-  transition-property: height;
   transition: all 0.3s ease-in-out;
   display: grid;
   justify-items: center;
@@ -37,13 +36,24 @@ export const Slider = styled.div`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
+  /*   grid-template-rows: repeat(4, auto); */
   width: calc(100% - 120px);
+
+  @media screen and (max-width: ${breakpoints.lg}px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 120px);
+  }
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: calc(100%);
+    width: calc(100% - 120px);
+  }
 `;
 
 export const CardWrapper = styled.div`
   width: 100%;
-  height: 20rem;
+  min-height: fit-content;
   padding: 20px;
   display: grid;
   grid-template-rows: min-content min-content auto;

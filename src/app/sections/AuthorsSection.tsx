@@ -22,7 +22,12 @@ export const AuthorsSection = () => {
     <AuthorSectionOuterWrapper>
       <AuthorSectionInnerWrapper>
         <SectionTitle id="authors_carousel">Autorky a autoři sborníku</SectionTitle>
-        <GridWrapper style={{ height: showCarousel ? '20rem' : '80rem' }}>
+        <GridWrapper
+          style={{
+            minHeight: showCarousel ? '10rem' : '50rem',
+            maxHeight: showCarousel ? '30rem' : '150rem',
+          }}
+        >
           {showCarousel ? (
             <Carousel />
           ) : (
