@@ -30,7 +30,7 @@ export const FooterSection = () => {
           </div>
           <div>
             <h3>Financování</h3>
-            <p>Kampaň je financovaná z prostředků frakce Evropského parlamentu Zelení/ESA.</p>
+            <p>Sborník je financován z&nbsp;prostředků frakce Evropského parlamentu Zelení/ESA.</p>
           </div>
           <div>
             <SocialsTitle>Sociální sítě</SocialsTitle>
