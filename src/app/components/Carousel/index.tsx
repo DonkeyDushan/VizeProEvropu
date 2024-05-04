@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Button, ButtonsWrapper, CarouselWrapper, Slider, Wrapper } from './styledComponents';
+import {
+  Button,
+  ButtonsWrapper,
+  CarouselWrapper,
+  /*  CarouselWrapper, */ Slider,
+  Wrapper,
+} from './styledComponents';
 import { authors } from 'app/content/authors';
 import { Card } from './Card';
 import { Chevron } from '../Chevron';

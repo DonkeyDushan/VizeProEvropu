@@ -8,6 +8,16 @@ export const Wrapper = styled.div`
   justify-items: center;
 `;
 
+export const GridWrapper = styled.div`
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  transition-property: height;
+  transition: all 0.3s ease-in-out;
+  display: grid;
+  justify-items: center;
+`;
+
 export const CarouselWrapper = styled.div`
   overflow: hidden;
   position: relative;
@@ -17,7 +27,6 @@ export const CarouselWrapper = styled.div`
 
 export const Slider = styled.div`
   display: grid;
-  height: 400px;
   left: 0;
   justify-content: center;
   align-items: center;
@@ -29,11 +38,12 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
+  width: calc(100% - 120px);
 `;
 
 export const CardWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 20rem;
   padding: 20px;
   display: grid;
   grid-template-rows: min-content min-content auto;
