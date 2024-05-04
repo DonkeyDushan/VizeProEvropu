@@ -52,7 +52,7 @@ export const Slider = styled.div`
   display: grid;
   left: 0;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   height: 100%;
   transition: translate 0.2s;
 `;
