@@ -54,11 +54,10 @@ export const FooterSectionInnerWrapper = styled.div`
 
 export const LogosWrapper = styled.div`
   height: min-content;
-  width: 100%;
-  padding: 2rem 0;
+  padding: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 1.5rem;
   align-self: start;
 
   img {

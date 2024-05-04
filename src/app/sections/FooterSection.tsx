@@ -34,10 +34,10 @@ export const FooterSection = () => {
             <h3 style={{ textAlign: 'center' }}>Sociální sítě</h3>
             <div
               style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(3, 1fr)',
-                justifyItems: 'center',
-                padding: '24px 0',
+                display: 'flex',
+                gap: '1.5rem',
+                justifyContent: 'center',
+                padding: '1rem 1.5rem',
               }}
             >
               <SocialsLink href="https://www.instagram.com/ruzovarebelka/" target="_blank">

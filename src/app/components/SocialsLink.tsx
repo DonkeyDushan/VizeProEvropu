@@ -2,8 +2,8 @@ import palette from 'app/theme/palette';
 import styled from 'styled-components';
 
 export const SocialsLink = styled.a`
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   background-color: transparent;
   border: none;
   color: ${palette.text.light};
