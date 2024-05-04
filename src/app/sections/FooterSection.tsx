@@ -10,6 +10,8 @@ import {
   FooterSectionOuterWrapper,
   LogosWrapper,
   Mask,
+  SocialsTitle,
+  SocialsWrapper,
 } from 'app/components/FooterSection';
 import { SocialsLink } from 'app/components/SocialsLink';
 
@@ -31,15 +33,8 @@ export const FooterSection = () => {
             <p>Kampaň je financovaná z prostředků frakce Evropského parlamentu Zelení/ESA.</p>
           </div>
           <div>
-            <h3 style={{ textAlign: 'center' }}>Sociální sítě</h3>
-            <div
-              style={{
-                display: 'flex',
-                gap: '1.5rem',
-                justifyContent: 'center',
-                padding: '1rem 1.5rem',
-              }}
-            >
+            <SocialsTitle>Sociální sítě</SocialsTitle>
+            <SocialsWrapper>
               <SocialsLink href="https://www.instagram.com/ruzovarebelka/" target="_blank">
                 <InstagramIcon />
               </SocialsLink>
@@ -51,7 +46,7 @@ export const FooterSection = () => {
               <SocialsLink href="https://www.youtube.com/@marketagregorova6789" target="_blank">
                 <YoutubeIcon />
               </SocialsLink>
-            </div>
+            </SocialsWrapper>
           </div>
           <LogosWrapper>
             <img src={MarketaLogo} />

@@ -1,3 +1,4 @@
+import { breakpoints } from 'app/theme/breakpoints';
 import palette from 'app/theme/palette';
 import styled from 'styled-components';
 
@@ -50,6 +51,14 @@ export const FooterSectionInnerWrapper = styled.div`
   grid-template-columns: repeat(4, 25%);
   gap: 2rem;
   padding: 32px 0;
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    grid-template-columns: repeat(1, 100%);
+  }
 `;
 
 export const LogosWrapper = styled.div`
@@ -64,5 +73,34 @@ export const LogosWrapper = styled.div`
     object-fit: contain;
     height: 100%;
     width: 100%;
+  }
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    padding: 2rem 0;
+    width: 75%;
+  }
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    padding: 0;
+    width: 75%;
+  }
+`;
+
+export const SocialsWrapper = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    justify-content: start;
+    padding: 1rem 0;
+  }
+`;
+
+export const SocialsTitle = styled.h3`
+  text-align: center;
+  @media screen and (max-width: ${breakpoints.md}px) {
+    text-align: start;
   }
 `;

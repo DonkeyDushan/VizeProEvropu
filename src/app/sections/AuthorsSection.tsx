@@ -2,15 +2,11 @@ import {
   AuthorSectionInnerWrapper,
   AuthorSectionOuterWrapper,
   SectionTitle,
+  UnrollButton,
 } from 'app/components/AuthorsSection';
 import { Carousel } from 'app/components/Carousel';
 import { Card } from 'app/components/Carousel/Card';
-import {
-  /*   CarouselWrapper, */
-  Grid,
-  GridWrapper,
-  UnrollButton,
-} from 'app/components/Carousel/styledComponents';
+import { Grid, GridWrapper } from 'app/components/Carousel/styledComponents';
 import { Chevron } from 'app/components/Chevron';
 import { authors } from 'app/content/authors';
 import { useState } from 'react';
@@ -25,7 +21,7 @@ export const AuthorsSection = () => {
         <GridWrapper
           style={{
             minHeight: showCarousel ? '10rem' : '50rem',
-            maxHeight: showCarousel ? '30rem' : '150rem',
+            maxHeight: showCarousel ? '30rem' : '1500rem',
           }}
         >
           {showCarousel ? (

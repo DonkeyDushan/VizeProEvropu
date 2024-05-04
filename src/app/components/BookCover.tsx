@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Book from 'app/assets/Vize_pro_evropu_obalka.png';
+import { breakpoints } from 'app/theme/breakpoints';
 
 const Wrapper = styled.div`
   width: 400px;
@@ -8,7 +9,12 @@ const Wrapper = styled.div`
   transform: rotate(5deg);
   z-index: 2;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: ${breakpoints.md}px) {
+    width: 40vw;
+    height: 60vw;
+  }
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
     width: 60vw;
     height: 90vw;
   }

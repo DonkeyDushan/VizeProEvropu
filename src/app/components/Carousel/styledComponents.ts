@@ -17,11 +17,35 @@ export const GridWrapper = styled.div`
   justify-items: center;
 `;
 
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: calc(100% - 120px);
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 132px);
+  }
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: calc(100% - 32px);
+  }
+`;
+
 export const CarouselWrapper = styled.div`
   overflow: hidden;
   position: relative;
   width: calc(100% - 120px);
   z-index: 2;
+
+  @media screen and (max-width: ${breakpoints.md}px) {
+    width: calc(100% - 132px);
+  }
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    width: calc(100% - 32px);
+  }
 `;
 
 export const Slider = styled.div`
@@ -33,25 +57,7 @@ export const Slider = styled.div`
   transition: translate 0.2s;
 `;
 
-export const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /*   grid-template-rows: repeat(4, auto); */
-  width: calc(100% - 120px);
-
-  @media screen and (max-width: ${breakpoints.lg}px) {
-    grid-template-columns: repeat(2, 1fr);
-    width: calc(100% - 120px);
-  }
-
-  @media screen and (max-width: ${breakpoints.md}px) {
-    grid-template-columns: repeat(1, 1fr);
-    width: calc(100%);
-    width: calc(100% - 120px);
-  }
-`;
-
-export const CardWrapper = styled.div`
+export const StyledCard = styled.div`
   width: 100%;
   min-height: fit-content;
   padding: 20px;
@@ -82,6 +88,14 @@ export const ButtonsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 0;
+
+  @media screen and (max-width: ${breakpoints.lg}px) {
+    padding: 16px;
+  }
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    padding: 0px;
+  }
 `;
 
 export const Button = styled.button`
@@ -96,22 +110,14 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
 
-export const UnrollButton = styled.button`
-  display: grid;
-  justify-items: center;
-  background-color: transparent;
-  color: ${palette.primary.main};
-  font-weight: 700;
-  font-size: 1rem;
-  align-items: center;
-  border: none;
-  transition: transform 0.2s;
-
-  &:hover {
-    div {
-      transform: translate(3px, -3px);
-    }
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    color: ${palette.primary.main};
+    font-weight: 700;
+    font-size: 1rem;
   }
 `;

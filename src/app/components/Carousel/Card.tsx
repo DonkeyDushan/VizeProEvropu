@@ -1,11 +1,11 @@
 import { IAuthors } from 'app/content/authors';
-import { CardTitle, CardWrapper } from './styledComponents';
+import { CardTitle, StyledCard } from './styledComponents';
 
 export const Card = ({ author }: { author: IAuthors }) => {
   return (
-    <CardWrapper>
+    <StyledCard>
       <CardTitle>{author?.name}</CardTitle>
       <p>{author?.text}</p>
-    </CardWrapper>
+    </StyledCard>
   );
 };
