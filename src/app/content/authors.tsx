@@ -18,11 +18,11 @@ export const authors = [
   },
   {
     name: 'Mgr. David Broul',
-    text: 'Působí jako doktorand na Katedře politologie a evropských studií Univerzity Palackého \u00A0Olomouci. Věnuje se problematice evropské integrace, českému předsednictví a je spoluautorem knihy Evropa spolu: průvodce po historii i\u00a0současnosti Evropské unie.',
+    text: 'Působí jako doktorand na Katedře politologie a evropských studií Univerzity Palackého v\u00A0Olomouci. Věnuje se problematice evropské integrace, českému předsednictví a je spoluautorem knihy Evropa spolu: průvodce po historii i\u00a0současnosti Evropské unie.',
   },
   {
     name: 'JUDr. Jana Kazaz, LLM, SJD',
-    text: 'Od roku 2022 pracuje \u00A0GLOBSECu, kde se \u00A0Centru pro demokracii a odolnost věnuje strategické komunikaci, dezinformacím a hybridním hrozbám. Má doktorát z ústavního práva porovnávacího z CEU v\u00a0Budapešti a LL.M. se specializací v\u00a0problematice práva Evropské unie.',
+    text: 'Od roku 2022 pracuje v\u00A0GLOBSECu, kde se v\u00A0Centru pro demokracii a odolnost věnuje strategické komunikaci, dezinformacím a hybridním hrozbám. Má doktorát z ústavního práva porovnávacího z CEU v\u00a0Budapešti a LL.M. se specializací v\u00a0problematice práva Evropské unie.',
   },
   {
     name: 'prof. PhDr. Petr Kaniok, Ph.D.',
