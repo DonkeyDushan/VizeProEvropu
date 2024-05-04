@@ -1,4 +1,5 @@
 import { breakpoints } from 'app/theme/breakpoints';
+import palette from 'app/theme/palette';
 import styled from 'styled-components';
 
 export const MainSectionOuterWrapper = styled.div`
@@ -8,6 +9,7 @@ export const MainSectionOuterWrapper = styled.div`
   display: grid;
   grid-template-rows: calc(100vh - 50px) 50px;
   justify-items: center;
+  background-color: ${palette.background};
 
   @media screen and (max-width: ${breakpoints.md}px) {
     grid-template-rows: calc(100vh - 50px) 50px;
@@ -23,7 +25,7 @@ export const MainSectionInnerWrapper = styled.div`
   height: 100%;
   padding: 20px;
   display: grid;
-  background-color: ${(props) => props.theme.primary.main};
+  background-color: ${palette.primary.main};
   justify-items: center;
   align-content: center;
   background-size: contain;

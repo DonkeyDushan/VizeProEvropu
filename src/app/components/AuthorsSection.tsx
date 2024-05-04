@@ -9,6 +9,7 @@ export const AuthorSectionOuterWrapper = styled.div`
   display: grid;
   justify-content: center;
   padding-bottom: 24px;
+  background-color: ${palette.background};
 `;
 
 export const AuthorSectionInnerWrapper = styled.div`
