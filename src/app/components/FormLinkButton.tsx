@@ -1,7 +1,6 @@
 import palette from 'app/theme/palette';
 import styled from 'styled-components';
 import texturaURL from 'app/assets/Textura.jpg?url';
-import BookPDF from 'app/assets/VIZE_PRO_EVROPU.pdf?url';
 
 const DonwloadLink = styled.a`
   position: relative;
@@ -10,7 +9,7 @@ const DonwloadLink = styled.a`
   width: fit-content;
   padding: 1rem 2rem;
   border-radius: 100px;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 300;
   font-family: 'Coolvetica';
   color: ${palette.primary.main};
@@ -18,14 +17,14 @@ const DonwloadLink = styled.a`
   transition: outline 0.15s;
   border: 2px solid ${palette.primary.main};
   z-index: 2;
-  rotate: 3deg;
+  rotate: -2deg;
 
   &&::after {
     position: absolute;
     top: 0px;
     left: 0px;
-    content: 'Stáhnout knihu';
-    font-size: 1.3rem;
+    content: 'Chci knihu fyzicky';
+    font-size: 1.8rem;
     font-weight: 300;
     font-family: 'Coolvetica';
     white-space: nowrap;
@@ -50,23 +49,23 @@ const DonwloadLink = styled.a`
     position: absolute;
     top: 0;
     left: 0;
-    content: 'Stáhnout knihu';
+    content: 'Chci knihu fyzicky';
     font-family: 'Coolvetica';
     color: transparent;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 300;
     white-space: nowrap;
     height: fit-content;
     width: fit-content;
     padding: 1rem 2rem;
     border-radius: 100px;
-    background-color: #ceaac0;
-    /* background-image: url(${texturaURL}); */
+    background-color: ${palette.background};
+    background-image: url(${texturaURL});
     background-position: center;
     filter: contrast(120%) brightness(1.2);
     border: 2px solid transparent;
     position: absolute;
-    rotate: -1.5deg;
+    rotate: 3deg;
     translate: 0.5rem 0.8rem;
     animation: animatedBackground 40s linear infinite alternate;
   }
@@ -83,10 +82,15 @@ const DonwloadLink = styled.a`
   }
 `;
 
-export const DownloadLinkButton = () => {
+export const FormLinkButton = () => {
   return (
-    <DonwloadLink href={BookPDF} download>
-      Stáhnout knihu
+    <DonwloadLink
+      href={
+        'https://docs.google.com/forms/d/e/1FAIpQLSfTJeWvfSEvI2g6WdJpNE6WwR2kRpdOQCK51V2lGF4sCfdBxw/viewform?pli=1'
+      }
+      target="_blank"
+    >
+      Chci knihu fyzicky
     </DonwloadLink>
   );
 };

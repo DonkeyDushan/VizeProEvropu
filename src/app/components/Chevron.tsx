@@ -1,3 +1,4 @@
+import { breakpoints } from 'app/theme/breakpoints';
 import palette from 'app/theme/palette';
 import styled, { css } from 'styled-components';
 
@@ -32,6 +33,10 @@ export const Chevron = styled.div<Props>`
   border-top: 2px solid ${palette.primary.main};
   border-right: 2px solid ${palette.primary.main};
   transition: rotate 0.2s;
+
+  @media screen and (max-width: ${breakpoints.sm}px) {
+    margin: 0 !important;
+  }
 
   ${(props) => props.direction === 'up' && Up(props)}
   ${(props) => props.direction === 'down' && Down(props)}

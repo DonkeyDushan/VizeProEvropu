@@ -102,6 +102,7 @@ export const ButtonsWrapper = styled.div`
 
   @media screen and (max-width: ${breakpoints.sm}px) {
     padding: 0px;
+    z-index: 2000;
   }
 `;
 
@@ -119,8 +120,9 @@ export const Button = styled.button`
   justify-content: center;
 
   @media screen and (max-width: ${breakpoints.sm}px) {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
     background-color: transparent;
     border: none;
     color: ${palette.primary.main};
